@@ -26,14 +26,20 @@ module.exports = {
   // },
   rules: {
     indent: ['error', 2],
-    'linebreak-style': ['error', 'unix'],
+    //'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
     'react/react-in-jsx-scope': 'off',
     'react/no-unescaped-entities': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
-    'prettier/prettier': 'error'
+    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        'endOfLine': 'auto',
+      }
+    ]
   },
   settings: {
     react: {
